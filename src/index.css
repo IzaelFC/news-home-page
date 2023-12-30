@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    /* Primary */
+
+    --soft-orange: hsl(35, 77%, 62%);
+    --soft-red: hsl(5, 85%, 63%);
+
+    /* Neutral */
+
+    --off-white: hsl(36, 100%, 99%);
+    --grayish-blue: hsl(233, 8%, 79%);
+    --dark-grayish-blue: hsl(236, 13%, 42%);
+    --very-dark-blue: hsl(240, 100%, 5%);
+
+    font-family: Inter;
+    font-size: 15px;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+h2 {
+    @apply font-semibold
+}
+
+section h2 {
+    @apply text-xl mb-3
+}
+
+section p {
+    @apply text-[--grayish-blue]
+}
+
+hr {
+    @apply border-[--dark-grayish-blue] my-10
+}
+
+footer section {
+    @apply gap-5
+}
+
+footer span {
+    @apply text-4xl text-[--grayish-blue] font-extrabold
+}
+
+footer h2 {
+    @apply text-lg text-[--very-dark-blue] font-extrabold
+}
+
+footer p {
+    @apply text-[--dark-grayish-blue]
+}
