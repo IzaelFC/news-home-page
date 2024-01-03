@@ -21,8 +21,16 @@
     font-size: 15px;
 }
 
+a, section h2 {
+    @apply hover:text-[--soft-orange] cursor-pointer transition-all
+}
+
+button {
+    @apply bg-[--soft-red] hover:bg-[--very-dark-blue] text-[--off-white] font-semibold uppercase py-3 px-10 w-fit transition-all
+}
+
 h1 {
-    font-weight: bold;
+    @apply font-bold
 }
 
 h2 {
@@ -38,21 +46,25 @@ section p {
 }
 
 hr {
-    @apply border-[--dark-grayish-blue] my-10
+    @apply border-[--dark-grayish-blue] md:my-10 my-5
 }
 
 footer section {
     @apply gap-5
 }
 
+footer img {
+    @apply w-auto sm:h-[50%] h-40 my-auto
+}
+
 footer span {
-    @apply text-4xl text-[--grayish-blue] font-extrabold
+    @apply lg:text-4xl sm:text-2xl text-4xl text-[--grayish-blue] font-extrabold
 }
 
 footer h2 {
-    @apply text-lg text-[--very-dark-blue] font-extrabold
+    @apply lg:text-lg sm:text-sm text-lg text-[--very-dark-blue] font-extrabold
 }
 
 footer p {
-    @apply text-[--dark-grayish-blue]
+    @apply text-[--dark-grayish-blue] sm:text-xs lg:text-base text-base
 }
